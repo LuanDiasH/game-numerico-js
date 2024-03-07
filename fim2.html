@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Matemática</title>
+
+    <!-- Adicione os links do Bootstrap abaixo -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .container{
+            color: white;
+            background-color: black;
+            height: 500px;
+            border-radius: 15px;
+            border: 2px solid white;
+        }
+
+        
+
+        h1{
+            padding-top: 20px;
+        }
+        
+
+        @media screen and (max-width: 1150px ){
+            .container{
+                color: white;
+                background-color: black;
+                height: 500px;
+                border-radius: 15px;
+                border-color: rgb(56, 182, 255);
+                border: 2px solid white;
+                text-align: center;
+
+            }
+
+            h1{
+                padding-top: 10px;
+            }
+
+            #text-time{
+            float: right;
+            margin-right: 88%;
+            }
+            
+        }
+
+        @media screen and (max-width: 500px ){
+            .container{
+                color: white;
+                background-color: black;
+                height: 500px;
+                border-radius: 15px;
+                border-color: rgb(56, 182, 255);
+                border: 2px solid white;
+            }
+
+            h1{
+                padding-top: 10px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="text-center">
+            <h1>Você perdeu!</h1>
+            <h4>3 Erros cometidos.</h4>
+            <h4 id="final-pontos">Sua pontuação final: 0</h4>
+            <button id="btn-voltar" class="btn btn-primary" onclick="voltar()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="jogo.js"></script>
+</body>
+</html>
